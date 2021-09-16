@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+  <form>
+  Name<input type="text" id="txtName" name="Firstn"><br><br>
+
+  <input type="submit" name="submit" onclick="Submitvalue()">
+  <div id="divOutput"></div>
+  </form>
+    <script>
+    function Submitvalue()
+    {
+      var name=document.getElementById("txtName").value;
+      document.getElementById("divOutput").innerHTML="Hello"+ name;
+    }
+    </script>
+  </body>
+</html>
